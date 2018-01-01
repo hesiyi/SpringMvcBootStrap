@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hesy.Dao.UserDao">
+
+
+     <select id="selectUser"  parameterType="int"   resultType="com.hesy.Pojo.User">
+         SELECT * FROM spring_mvc_user WHERE id = #{value}
+     </select>
+</mapper>
